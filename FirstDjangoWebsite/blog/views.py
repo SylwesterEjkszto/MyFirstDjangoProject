@@ -515,6 +515,8 @@ def sudoku(request):
             horizontal3[ThirdRow[i]] = random.choice(ListOfNumbers)
             SecondRemovedisc.append(horizontal3)
             SecondRemove.append(ThirdRow[i])
+
+    #test prints
     print(ListOfNumbers)
     print(horizontal1)
     print(horizontal2)
