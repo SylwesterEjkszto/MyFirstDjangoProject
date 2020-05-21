@@ -451,44 +451,70 @@ def sudoku(request):
     SecondRemovedisc = [horizontal2,
                         horizontal2,
                         horizontal2,]
-    SecondFirstRowRemoves = ['Cell4h1',
-                             'Cell5h1',
-                             'Cell6h1',
-                             'Cell7h1',
-                             'Cell8h1',
-                             'Cell9h1']
-    SecondFirstRowRemovesDisc = [horizontal1,
-                                 horizontal1,
-                                 horizontal1,
-                                 horizontal1,
-                                 horizontal1,
-                                 horizontal1]
     SecondRow = ['Cell4h2',
                  'Cell5h2',
                  'Cell6h2',
                  'Cell7h2',
                  'Cell8h2',
                  'Cell9h2']
-    SecondRowDisc = [horizontal2,
-                     horizontal2,
-                     horizontal2,
-                     horizontal2,
-                     horizontal2,
-                     horizontal2]
+    SecondSquareFirstRow = ['Cell4h1','Cell5h1','Cell6h1']
+    ThirdSquareFirstRow = ['Cell7h1','Cell8h1', 'Cell9h1']
+    SecondSquareFirstRowDisc = [horizontal1, horizontal1, horizontal1]
     for i in range(len(SecondRow)):
         ListOfNumbers = [1,2,3,4,5,6,7,8,9]
-        value = SecondFirstRowRemovesDisc[i][SecondFirstRowRemoves[i]]
-        if value in ListOfNumbers:
-            ListOfNumbers.remove(value)
+        if i <= 3:
+            for x in range(len(SecondSquareFirstRow)):
+                value = SecondSquareFirstRowDisc[x][SecondSquareFirstRow[x]]
+                if value in ListOfNumbers:
+                    ListOfNumbers.remove(value)
+        if i > 3:
+            for x in range(len(ThirdSquareFirstRow)):
+                value = SecondSquareFirstRowDisc[x][ThirdSquareFirstRow[x]]
+                if value in ListOfNumbers:
+                    ListOfNumbers.remove(value)
         for x in range(len(SecondRemove)):
             value = SecondRemovedisc[x][SecondRemove[x]]
             if value in ListOfNumbers:
                 ListOfNumbers.remove(value)
-        value =  SecondRowDisc[i][SecondRow[i]]
-        if value in ListOfNumbers:
-            ListOfNumbers.remove(value)
         horizontal2[SecondRow[i]] = random.choice(ListOfNumbers)
+        SecondRemovedisc.append(horizontal2)
+        SecondRemove.append(SecondRow[i])
 
+        # Third FUll row
+        SecondRemove = ['Cell1h3',
+                        'Cell2h3',
+                        'Cell3h3', ]
+        SecondRemovedisc = [horizontal3,
+                            horizontal3,
+                            horizontal3, ]
+        ThirdRow = ['Cell4h2',
+                     'Cell5h2',
+                     'Cell6h2',
+                     'Cell7h2',
+                     'Cell8h2',
+                     'Cell9h2']
+        SecondSquare = ['Cell4h1', 'Cell5h1', 'Cell6h1','Cell4h2',"Cell5h2","Cell6h2"]
+        ThirdSquare = ['Cell7h1', 'Cell8h1', 'Cell9h1','Cell7h2', 'Cell8h2', 'Cell9h2']
+        SecondSquareDisc = [horizontal1, horizontal1, horizontal1, horizontal2, horizontal2, horizontal2]
+        for i in range(len(SecondRow)):
+            ListOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            if i <= 3:
+                for x in range(len(SecondSquareFirstRow)):
+                    value = SecondSquareDisc[x][SecondSquare[x]]
+                    if value in ListOfNumbers:
+                        ListOfNumbers.remove(value)
+            if i > 3:
+                for x in range(len(ThirdSquareFirstRow)):
+                    value = SecondSquareDisc[x][ThirdSquare[x]]
+                    if value in ListOfNumbers:
+                        ListOfNumbers.remove(value)
+            for x in range(len(SecondRemove)):
+                value = SecondRemovedisc[x][SecondRemove[x]]
+                if value in ListOfNumbers:
+                    ListOfNumbers.remove(value)
+            horizontal3[ThirdRow[i]] = random.choice(ListOfNumbers)
+            SecondRemovedisc.append(horizontal3)
+            SecondRemove.append(ThirdRow[i])
     print(ListOfNumbers)
     print(horizontal1)
     print(horizontal2)
