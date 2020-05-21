@@ -516,7 +516,7 @@ def sudoku(request):
             SecondRemovedisc.append(horizontal3)
             SecondRemove.append(ThirdRow[i])
 
-    #test prints check
+    #test print
     print(ListOfNumbers)
     print(horizontal1)
     print(horizontal2)
