@@ -1,0 +1,291 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:black;
+    font-family:consolas;
+}
+
+p {
+    font-family:consolas;
+    color:white;
+}
+
+.NavBarAPhotoLeft {
+    margin:0;
+    padding:0;
+    height:8vw;
+}
+
+nav {
+    width:100%;
+    background-color: black;
+}
+
+.NavBarUl{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 8vw;
+}
+
+.NavBarLi {
+    list-style-type: none;
+    margin: 0 4vw;
+    font-size: 3vh;
+    margin-top: 3vw;
+
+}
+
+.NavBarA {
+    text-decoration: none;
+    color:white;
+    padding: 2vw;
+    font-family: Consolas;
+}
+
+.NavBarA:hover {
+    background-color: #C6E9FF;
+    color:black;
+}
+
+.column1 {
+    float: left;
+    width: 23%;
+    }
+
+.column2 {
+    float: left;
+    width: 77%;
+    background-color:black;
+    color:white;
+}
+
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.PhotoOfMe {
+    width:100%;
+}
+
+.h2text {
+    margin-left:10%;
+    font-family: "Consolas";
+}
+
+.css-typing p {
+  border-right: .8em solid white;
+  font-family: "Consolas";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+  width: 60em;
+  -webkit-animation: type 2s steps(60, end);
+  animation: type 2s steps(60, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 34em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(60, end);
+  animation: type2 3s steps(60, end);
+  -webkit-animation-delay: 0,5s;
+  animation-delay: 0,5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 27em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(50, end), blink .5s step-end infinite alternate;
+  animation: type2 3s steps(50, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+  width: 21em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(50, end), blink .5s step-end infinite alternate;
+  animation: type2 3s steps(50, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(5) {
+  width: 23em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(30, end), blink .5s step-end infinite alternate;
+  animation: type2 3s steps(30, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(6) {
+  width: 4em;
+  opacity: 0;
+  -webkit-animation: type2 0.8s steps(8, end), blink .5s step-end infinite alternate;
+  animation: type2 0.8s steps(8, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(7) {
+  width: 9em;
+  opacity: 0;
+  -webkit-animation: type2 1.2s steps(12, end), blink .5s step-end infinite alternate;
+  animation: type2 1.2s steps(12, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 12.8s;
+  animation-delay: 12.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(8) {
+  width: 6em;
+  opacity: 0;
+  -webkit-animation: type2 0.9s steps(9, end), blink .5s step-end infinite alternate;
+  animation: type2 0.9s steps(9, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(9) {
+  width: 5em;
+  opacity: 0;
+  -webkit-animation: type2 0.8s steps(8, end), blink .5s step-end infinite alternate;
+  animation: type2 0.8s steps(8, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 14.9s;
+  animation-delay: 14.9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.css-typing p:nth-child(10) {
+  width: 6em;
+  opacity: 0;
+  -webkit-animation: type2 0.9s steps(9, end), blink .5s step-end infinite alternate;
+  animation: type2 0.9s steps(9, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 15.8s;
+  animation-delay: 15.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.OutputTextFunctionOne {
+    color:white;
+    font-family:consolas;
+}
+
+.RentalIntr {
+    color:white;
+    font-family:consolas;
+    padding:2% 0% 3% 4%;
+}
+
+.InputCiti, .output {
+    padding-left:5%;
+}
+
+.ListOfProgramsListA {
+    color:white;
+    text-decoration:none;
+    font-family:consolas;
+    font-size:2em;
+
+}
+
+.ListOfProgramsListA :hover {
+    color:#C6E9FF;
+}
+
+.game{
+    width:600px;
+    height:600px;
+    margin:2% 0% 0% 35%;
+    position: absolute;
+    display: block;
+}
+
+.SudokuMainTable {
+    width:400px;
+    height:400px;
+    border:3px solid white;
+    border-collapse:collapse;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+
+.cell input {
+    display: inline-block;
+    float: left;
+
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+#3rdCell {
+    border-right-color:#190fff;
+}

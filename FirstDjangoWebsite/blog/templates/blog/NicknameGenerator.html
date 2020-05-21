@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div>
+     <form action="{% url 'NicknameGenerator' %}", method="POST">
+                {% csrf_token %}
+        <p>Write down your gender correct is "male" or "female"</p>
+         <input type="text" name="gender">
+         <input type="submit" name="submit">
+</div>
+
+<div class="output">
+                <h2 class="OutputTextFunctionOne">{{outputofnickgenerator}}</h2>
+            </div>
+{% endblock content %}
+

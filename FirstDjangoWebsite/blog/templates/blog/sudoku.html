@@ -1,0 +1,108 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class = "game">
+    <table class="SudokuMainTable">
+        <tr class="row">
+             <td class="cell"><input name="Cell1" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell2" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell3" style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell4" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell5"" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell6" style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell7" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell8" type="text" maxlength="1"></td>
+             <td class="cell"><input name="Cell9" type="text" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue; border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue; border-bottom: 2px solid blue;"  type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue; border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue; border-bottom: 2px solid blue;"  type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+        <tr class="row">
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-bottom: 2px solid blue; border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input style="border-right: 2px solid blue;" type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+             <td class="cell"><input type="text" maxlength="1"></td>
+         </tr>
+    </table>
+     <p>{{x}}</p>
+</div>
+{% endblock content %}

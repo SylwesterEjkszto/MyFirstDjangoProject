@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% load static %}
+    {% block content %}
+           <!-- form -->
+        <div class="RentalIntr">
+        <p>Hello this is residential market scanner, you can check rental announcements on every city in Poland!</p>
+        <p>Just type below name of city and get your results</p>
+        <p>** currently price isn't working correctly because of Polish websites front-end changes, I will rewrite it in future**</p>
+        <p> If you need some past data from biggest polish cities feel free to contact me, I have few old xsl generate by this program</p>
+        <p>currently ouput isn't easy to read, I have in mind to change it in the future</p>
+        <p>Be patient it will take a while</p>
+        </div>
+        <div class="InputCiti">
+        <form action="{% url 'django_bs' %}", method="POST">
+            {% csrf_token %}
+            <input type="text" name="citi">
+            <input type="submit" name="submit">
+        </div>
+
+            <!-- output -->
+            <div class="output">
+                <h2 class="OutputTextFunctionOne">{{h1_val}}</h2>
+            </div>
+    {% endblock content %}

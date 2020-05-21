@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>Sylwester Ejkszto - Portfolio{{ title }}</title>
+    {% else %}
+        <title>Sylwester Ejkszto - Portfolio</title>
+    {% endif %}
+</head>
+<body>
+<nav>
+    <ul class="NavBarUl">
+        <li class="NavBarLiPhotoLeft">
+            <a>
+                <img  class = "NavBarAPhotoLeft" src="{% static 'images/Sylwester_Ejkszto.png' %}"
+            </a>
+        </li>
+        <li class="NavBarLi">
+            <a href="/" class="NavBarA"> About my skills </a>
+        </li>
+        <li class="NavBarLi">
+            <a href="/marketscaner" class="NavBarA">Residential rental market scanner</a>
+        </li>
+        <li class="NavBarLi">
+            <a href ="/listofprograms" class="NavBarA">list of programs</a>
+        </li>
+    </ul>
+</nav>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
